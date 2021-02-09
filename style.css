@@ -1,0 +1,10 @@
+.h3{
+   font-size: 35px;
+   line-height: 39px;
+   color: #f00000;
+}
+p{
+   font-size: 20px;
+   color: gray;
+   font-weight: normal;
+}
