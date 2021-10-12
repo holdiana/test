@@ -1,0 +1,63 @@
+.top-background {
+	& .container {
+		position: relative;
+		z-index: 2;
+		@include laptop-l {
+			max-width: 990px;
+		}
+		@include media-tablet {
+			max-width: 767px;
+		}
+	}
+	& .color-block {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 295.29px;
+		height: 700px;
+		background-color: $primary_color;
+		border-radius: 30px 0px 0px 30px;
+	}
+}
+.header {
+	position: relative;
+	padding: 37px 0 0 0;
+	z-index: 3;
+	& .wrapper {
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		@include media-laptop {
+			max-width: 1057px;
+			background-color: seagreen;
+			justify-content: center;
+		}
+	}
+	&__burger {
+		display: none;
+	}
+	& .menu {
+		font-family: "Raleway", sans-serif;
+		display: flex;
+		padding-left: 110px;
+		@include media-laptop {
+			padding-left: 10px;
+		}
+		@include media-mobile-large {
+		}
+		&__item {
+			margin: 0 20px;
+		}
+		&__link {
+			font-size: 10px;
+			line-height: 1rem;
+			letter-spacing: 1px;
+		}
+	}
+
+	& button {
+		background-color: $second_color;
+	}
+}

@@ -7,6 +7,32 @@
 }
 
 body {
-	font-family: "Raleway", "Rubik", sans-serif;
+	font-family: "Rubik", sans-serif;
 	font-size: 12px;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+button {
+	width: 130px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	color: $button_textColor;
+	font-family: "Raleway", sans-serif;
+	font-size: 10px;
+	line-height: 1rem;
+	letter-spacing: 1px;
 }
