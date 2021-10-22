@@ -1,0 +1,88 @@
+.experts {
+	background-color: $bg_color;
+	&__wrapper {
+		padding: 53px 71px 116px 92px;
+	}
+	&__counter {
+		margin: 0 auto;
+		padding: 50.9px 75.9px 32.8px 31px;
+		width: 761.89px;
+		background-image: url("../../assets/images/counter_bg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		&-inner {
+			max-width: 654px;
+			height: 100%;
+			background-color: $bg_colorWhite;
+			padding: 28px 80px;
+			box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+			border-radius: 16px;
+			display: flex;
+			justify-content: space-between;
+		}
+		&-item {
+			text-align: center;
+		}
+		&-total {
+			font-size: 3.6rem;
+			font-weight: 700;
+			line-height: 4.3rem;
+			letter-spacing: 0.14em;
+			text-align: center;
+			color: $primary_color;
+		}
+		&-name {
+			font-size: 1.1rem;
+			line-height: 1.3rem;
+			color: $article_textColor;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: 1px;
+		}
+	}
+	&__content {
+		padding-top: 46.26px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	&__main-info {
+		max-width: 393px;
+		align-self: center;
+	}
+	&__button {
+		background-color: $primary_color;
+	}
+	&__img {
+		padding: 24.5px 94.4px;
+		max-width: 521.17px;
+		height: 284px;
+		background-color: $bg_colorWhite;
+		border-radius: 8px;
+		filter: drop-shadow(0px 4px 18px rgba(88, 126, 236, 0.18));
+
+		&-block {
+			background-image: url("../../assets/images/experts.png");
+
+			width: 332.45px;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: top center;
+			position: relative;
+		}
+		&-video {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -20px;
+			margin-top: -20px;
+			display: inline-block;
+			width: 40.79px;
+			height: 40.79px;
+			background-color: $second_color;
+			border-radius: 50%;
+		}
+	}
+}
