@@ -1,0 +1,20 @@
+.stay-safe {
+	&__wrapper {
+		padding: 79px 100px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__info {
+		max-width: 379px;
+	}
+	&__title {
+		& span {
+			color: $primary_color;
+		}
+	}
+	&__button {
+		background-color: $primary_color;
+	}
+}

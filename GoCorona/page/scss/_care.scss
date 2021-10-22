@@ -1,6 +1,6 @@
 .care {
 	&__wrapper {
-		padding: 90px 52.6px 48px 70px;
+		padding: 90px 52.6px 28px 70px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -11,15 +11,8 @@
 	}
 	&__description {
 		max-width: 375px;
-		font-size: 1.2rem;
-		color: $text_color;
-		font-weight: 400;
-		line-height: 1.7rem;
-		letter-spacing: 0.08em;
-		padding: 12px 0 24px 0;
 	}
 	&__button {
-		max-width: 144px;
 		background-color: $primary_color;
 	}
 	&__main-img {
