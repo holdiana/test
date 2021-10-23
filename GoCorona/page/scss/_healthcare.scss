@@ -1,0 +1,58 @@
+.healthcare {
+	&__wrapper {
+		padding: 79.59px 55px 0 55px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__info {
+		text-align: center;
+	}
+	&__title {
+		& span {
+			color: $primary_color;
+		}
+	}
+	&__description {
+		max-width: 600.9px;
+		margin: 0 auto;
+	}
+	&__cards {
+		display: flex;
+		justify-content: center;
+		max-width: 1100px;
+		height: 369px;
+		// padding: 46px 55.25px 46px 56.47px;
+
+		background: url("../../assets/images/counter_bg.png") center;
+		background-size: contain;
+		background-repeat: repeat-x;
+
+		&-wrapper {
+			width: 278.17px;
+			height: 276.52px;
+			padding: 36.65px 17.82px;
+			background-color: $bg_colorWhite;
+			border-radius: 8px;
+			filter: drop-shadow(0px 4px 18px rgba(88, 126, 236, 0.18));
+			&:not(:last-child) {
+				margin-right: 70px;
+			}
+		}
+		&-inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		&-icon {
+		}
+		&-title {
+			padding: 58px 0 4px 0;
+		}
+		&-description {
+			padding-top: 0;
+			max-width: 238px;
+			text-align: center;
+		}
+	}
+}

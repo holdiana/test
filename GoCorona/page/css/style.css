@@ -66,6 +66,14 @@ h2 span {
   color: #4285f4;
 }
 
+h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
 .top-background__container {
   position: relative;
   background-color: #fafbfd;
@@ -334,4 +342,82 @@ h2 span {
   height: 40.79px;
   background-color: #4285f4;
   border-radius: 50%;
+}
+
+.healthcare__wrapper {
+  padding: 79.59px 55px 0 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.healthcare__info {
+  text-align: center;
+}
+
+.healthcare__title span {
+  color: #ec5863;
+}
+
+.healthcare__description {
+  max-width: 600.9px;
+  margin: 0 auto;
+}
+
+.healthcare__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1100px;
+  height: 369px;
+  background: url("../../assets/images/counter_bg.png") center;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.healthcare__cards-wrapper {
+  width: 278.17px;
+  height: 276.52px;
+  padding: 36.65px 17.82px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-filter: drop-shadow(0px 4px 18px rgba(88, 126, 236, 0.18));
+          filter: drop-shadow(0px 4px 18px rgba(88, 126, 236, 0.18));
+}
+
+.healthcare__cards-wrapper:not(:last-child) {
+  margin-right: 70px;
+}
+
+.healthcare__cards-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.healthcare__cards-title {
+  padding: 58px 0 4px 0;
+}
+
+.healthcare__cards-description {
+  padding-top: 0;
+  max-width: 238px;
+  text-align: center;
 }
