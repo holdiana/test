@@ -1,0 +1,14 @@
+.footer {
+	&__apps {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 46.9px;
+
+		&-icon {
+			&:not(:last-child) {
+				margin-right: 56.59px;
+			}
+		}
+	}
+}
