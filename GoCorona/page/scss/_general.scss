@@ -14,12 +14,17 @@ body {
 	// font-size: 12px;
 	height: 100%;
 	overflow-x: hidden;
+	&._lock {
+		overflow: hidden;
+	}
 }
 
 .container {
-	// max-width: 1200px;
-	// margin: 0 auto;
-	// padding: 0 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+	@include media-laptop {
+		max-width: 1024px;
+	}
 }
 
 ul {
