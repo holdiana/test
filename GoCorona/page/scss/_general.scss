@@ -11,12 +11,12 @@ html {
 
 body {
 	font-family: "Rubik", sans-serif;
-	// font-size: 12px;
 	height: 100%;
 	overflow-x: hidden;
 	&._lock {
 		overflow: hidden;
 	}
+	border: 1px solid red;
 }
 
 .container {
@@ -51,6 +51,10 @@ a {
 		-ms-transform: scale(1.2);
 		transform: scale(1.2);
 	}
+	@include media-mobile-large {
+		width: 100px;
+		height: 35px;
+	}
 }
 .default-description {
 	font-size: 1.2rem;
@@ -68,6 +72,15 @@ h2 {
 	color: $article_textColor;
 	& span {
 		color: $second_color;
+	}
+	@include media-tablet {
+		font-size: 3.3rem;
+		line-height: 4.4rem;
+		text-align: center;
+	}
+	@include media-mobile-large {
+		font-size: 3rem;
+		line-height: 3.8rem;
 	}
 }
 h3 {

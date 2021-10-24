@@ -4,10 +4,22 @@
 		justify-content: center;
 		align-items: center;
 		padding-bottom: 46.9px;
+		@include media-tablet {
+			padding-top: 20px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
 
 		&-icon {
 			&:not(:last-child) {
 				margin-right: 56.59px;
+				@include media-tablet {
+					margin-right: 2px;
+				}
+			}
+			@include sm-tablet {
+				text-align: center;
 			}
 		}
 	}

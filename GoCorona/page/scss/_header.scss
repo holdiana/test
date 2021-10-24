@@ -29,6 +29,9 @@
 		@include media-laptop {
 			padding: 30px 43px 0 30px;
 		}
+		@include media-mobile-large {
+			padding: 10px 20px 0 20px;
+		}
 	}
 	&__burger {
 		z-index: 6;
@@ -110,8 +113,7 @@
 				font-size: 2rem;
 			}
 		}
-		// @include media-mobile-large {
-		// }
+
 		&__item {
 			&:not(:last-child) {
 				margin-right: 40px;
@@ -137,9 +139,6 @@
 		max-width: 130px;
 		background-color: $second_color;
 		z-index: 6;
-		@mixin media-mobile-large {
-			max-width: 100px;
-		}
 	}
 }
 .logo {

@@ -12,28 +12,39 @@
 		@content;
 	}
 }
+//1200px
 @mixin laptop-l {
 	@media (max-width: $laptop-l-width) {
 		@content;
 	}
 }
-
+//1024px
 @mixin media-laptop {
 	@media (max-width: $content-width) {
 		@content;
 	}
 }
-
+//768px
 @mixin media-tablet {
 	@media (max-width: $tablet-width) {
 		@content;
 	}
 }
+//555px
+@mixin sm-tablet {
+	@media (max-width: $tablet-sm-width) {
+		@content;
+	}
+}
+
+//425px
 @mixin media-mobile-large {
 	@media (max-width: $mobile-large-width) {
 		@content;
 	}
 }
+
+//320px
 @mixin media-mobile-small {
 	@media (max-width: $mobile-small-width) {
 		@content;

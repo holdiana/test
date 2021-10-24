@@ -3,14 +3,36 @@
 		padding: 90px 52.6px 28px 70px;
 		display: flex;
 		flex-direction: column;
+		@include laptop-l {
+			padding: 90px 42.6px 28px 50px;
+		}
+		@include media-laptop {
+			flex-direction: row;
+			justify-content: end;
+		}
+		@include media-tablet {
+			padding: 30px 30px 18px 30px;
+			flex-direction: column;
+		}
 	}
 	&__main {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: space-between;
+		@include media-laptop {
+			flex-wrap: wrap-reverse;
+			margin: 0 auto;
+		}
+
 		&-info {
 			max-width: 397px;
 			align-self: center;
+			@include media-tablet {
+				min-width: 300px;
+				text-align: center;
+			}
+			@include media-mobile-large {
+				max-width: 290px;
+			}
 		}
 	}
 
@@ -21,10 +43,32 @@
 		background-color: $primary_color;
 	}
 	&__main-img {
-		background-image: url("../../assets/images/main_img.png");
 		width: 547px;
+		background-image: url("../../assets/images/main_img.png");
+		background-size: cover;
+		background-repeat: no-repeat;
 		height: 397px;
 		z-index: 4;
+		@include media-laptop {
+			background-position: top center;
+		}
+		@include media-tablet {
+			width: 447px;
+			height: 297px;
+			background-position: top center;
+			background-size: 90%;
+			position: relative;
+		}
+		@include sm-tablet {
+			background-size: 80%;
+			height: 197px;
+			background-size: contain;
+			background-position: center;
+		}
+		@include media-mobile-large {
+			background-size: 60%;
+			background-position: left;
+		}
 	}
 	&__video {
 		z-index: 4;
@@ -32,6 +76,20 @@
 		padding-top: 60.58px;
 		display: flex;
 		align-items: center;
+		@include media-laptop {
+			align-items: flex-end;
+			justify-content: center;
+			// margin-right: 100px;
+		}
+		@include media-tablet {
+			padding-top: 20px;
+			margin: 0 auto;
+			// top: 50%;
+			// left: 50%;
+			// margin-left: -114px;
+			// margin-top: -114px;
+		}
+
 		&-text {
 			margin-left: 12px;
 			color: $text_color;
@@ -48,3 +106,9 @@
 		}
 	}
 }
+// @mixin media-laptop {
+// 	.care__main {
+// 		flex-wrap: wrap-reverse;
+// 		background-color: red;
+// 	}
+// }
