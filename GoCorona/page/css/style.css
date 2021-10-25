@@ -8,6 +8,7 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +30,10 @@ body._lock {
   .container {
     max-width: 1024px;
   }
+}
+
+.wrapper {
+  max-width: 1200px;
 }
 
 ul {
@@ -846,6 +851,12 @@ h3 {
   }
 }
 
+@media (max-width: 425px) {
+  .healthcare__cards-wrapper {
+    height: 220px;
+  }
+}
+
 .healthcare__cards-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,6 +875,12 @@ h3 {
 
 .healthcare__cards-title {
   padding: 58px 0 4px 0;
+}
+
+@media (max-width: 425px) {
+  .healthcare__cards-title {
+    padding: 28px 0 4px 0;
+  }
 }
 
 .healthcare__cards-description {
