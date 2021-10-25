@@ -14,7 +14,6 @@ body {
   font-family: "Rubik", sans-serif;
   height: 100%;
   overflow-x: hidden;
-  border: 1px solid red;
 }
 
 body._lock {
