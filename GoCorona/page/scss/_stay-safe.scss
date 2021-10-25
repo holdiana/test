@@ -1,0 +1,40 @@
+.stay-safe {
+	&__wrapper {
+		padding: 79px 100px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		@include media-laptop {
+			padding: 40px 60px;
+			justify-content: space-between;
+		}
+		@include media-tablet {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@include media-mobile-large {
+			padding: 20px 20px;
+		}
+	}
+	&__img {
+		& img {
+			@include media-laptop {
+				width: 90%;
+			}
+		}
+	}
+	&__info {
+		max-width: 379px;
+		@include media-tablet {
+			text-align: center;
+		}
+	}
+	&__title {
+		& span {
+			color: $primary_color;
+		}
+	}
+	&__button {
+		background-color: $primary_color;
+	}
+}

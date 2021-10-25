@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	height: 100%;
+	overflow-x: hidden;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	@include media-laptop {
+		max-width: 1024px;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.default-button {
+	width: 144px; //max-width + padding
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	color: $button_textColor;
+	font-family: "Raleway", sans-serif;
+	font-size: 1rem;
+	line-height: 1.17rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: ease 0.5s;
+	&:hover {
+		cursor: pointer;
+		-webkit-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	@include media-mobile-large {
+		width: 100px;
+		height: 35px;
+	}
+}
+.default-description {
+	font-size: 1.2rem;
+	color: $text_color;
+	font-weight: 400;
+	line-height: 1.7rem;
+	letter-spacing: 0.08em;
+	padding: 12px 0 24px 0;
+}
+h2 {
+	margin: 0;
+	font-size: 4.4rem;
+	font-weight: 700;
+	line-height: 5.5rem;
+	color: $article_textColor;
+	& span {
+		color: $second_color;
+	}
+	@include media-tablet {
+		font-size: 3.3rem;
+		line-height: 4.4rem;
+		text-align: center;
+	}
+	@include media-mobile-large {
+		font-size: 3rem;
+		line-height: 3.8rem;
+	}
+}
+h3 {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 2.2rem;
+	letter-spacing: 0.08em;
+	text-align: center;
+}
