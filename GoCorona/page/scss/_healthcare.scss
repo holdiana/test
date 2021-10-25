@@ -54,6 +54,9 @@
 			@include media-tablet {
 				margin-top: 20px;
 			}
+			@include media-mobile-large {
+				height: 220px;
+			}
 		}
 		&-inner {
 			display: flex;
@@ -65,6 +68,9 @@
 		}
 		&-title {
 			padding: 58px 0 4px 0;
+			@include media-mobile-large {
+				padding: 28px 0 4px 0;
+			}
 		}
 		&-description {
 			padding-top: 0;

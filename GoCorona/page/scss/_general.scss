@@ -7,6 +7,7 @@
 }
 html {
 	font-size: 10px;
+	overflow-x: hidden;
 }
 
 body {
@@ -24,6 +25,9 @@ body {
 	@include media-laptop {
 		max-width: 1024px;
 	}
+}
+.wrapper {
+	max-width: 1200px;
 }
 
 ul {
