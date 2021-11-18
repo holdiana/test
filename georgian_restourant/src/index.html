@@ -20,13 +20,13 @@
 						<img src="../src/icons/logo.svg" alt="logo icon" class="header__logo-img">
 					</a>
 				</div>
-				<nav class="header__menu">
-					<ul class="header__menu-items">
-						<li class="header__menu-item"><a href="#" class="header__menu-link">главная</a></li>
-						<li class="header__menu-item"><a href="#" class="header__menu-link">меню</a></li>
-						<li class="header__menu-item"><a href="#" class="header__menu-link">доставка</a></li>
-						<li class="header__menu-item"><a href="#" class="header__menu-link">контакты</a></li>
-						<li class="header__menu-item"><a href="#" class="header__menu-link">акции</a></li>
+				<nav class="header__nav">
+					<ul class="header__nav-items">
+						<li class="header__nav-item"><a href="#" class="header__nav-link">главная</a></li>
+						<li class="header__nav-item"><a href="#" class="header__nav-link">меню</a></li>
+						<li class="header__nav-item"><a href="#" class="header__nav-link">доставка</a></li>
+						<li class="header__nav-item"><a href="#" class="header__nav-link">контакты</a></li>
+						<li class="header__nav-item"><a href="#" class="header__nav-link">акции</a></li>
 					</ul>
 				</nav>
 				<div class="header__callback">
@@ -65,33 +65,96 @@
 		</div>
 	</section>
 </div>
-<section class="content">
-	<div class="container">
-		<h2 class="content__title title">Попробуйте на вкус
-		</h2>
-		<p class="content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna
-			hendrerit convallis aliquam consequat turpis.</p>
-		<div class="content__inner">
-			<div class="content__item">
-				<div class="content__item-img01 content__image"></div>
-				<!-- <img src="./images/el_01.jpg" alt="image dish" class="content__item-img"> -->
-				<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+<div class="connent-background">
+	<section class="content">
+		<div class="container">
+			<h2 class="content__title title">Попробуйте на вкус
+			</h2>
+			<p class="content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus
+				urna
+				hendrerit convallis aliquam consequat turpis.</p>
+			<div class="content__inner">
+				<div class="content__item">
+					<div class="content__item-img01 content__image"></div>
+					<!-- <img src="./images/el_01.jpg" alt="image dish" class="content__item-img"> -->
+					<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+				</div>
+				<div class="content__item">
+					<div class="content__item-img02 content__image"></div>
+					<!-- <img src="./images/el_02.jpg" alt="image dish" class="content__item-img"> -->
+					<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+				</div>
+				<div class="content__item">
+					<div class="content__item-img03 content__image"></div>
+					<!-- <img src="./images/el_03.jpg" alt="image dish" class="content__item-img"> -->
+					<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+				</div>
 			</div>
-			<div class="content__item">
-				<div class="content__item-img02 content__image"></div>
-				<!-- <img src="./images/el_02.jpg" alt="image dish" class="content__item-img"> -->
-				<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
-			</div>
-			<div class="content__item">
-				<div class="content__item-img03 content__image"></div>
-				<!-- <img src="./images/el_03.jpg" alt="image dish" class="content__item-img"> -->
-				<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+			<button class="content__btn  button">
+				<a href="#" class="content__btn-link">ПЕРЕЙТИ К ДОСТАВКЕ</a></button>
+		</div>
+	</section>
+	<section class="menu">
+		<div class="wrapper">
+			<h2 class="menu__title title">Меню</h2>
+			<p class="menu__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna
+				hendrerit convallis aliquam consequat turpis.</p>
+			<div class="carousel">
+				<div class="carousel__inner">
+					<div class="carousel__item active">
+						<img src="./images/slider/slider_01.jpg" alt="dish image" class="carousel__item-img">
+						<div class="carousel__block">
+							<h3 class="carousel__title">Салаты</h3>
+						</div>
+
+					</div>
+					<div class="carousel__item">
+						<img src="./images/slider/slider_02.jpg" alt="dish image" class="carousel__item-img">
+						<div class="carousel__block">
+							<h3 class="carousel__title">Выпечка</h3>
+						</div>
+
+					</div>
+					<div class="carousel__item">
+						<img src="./images/slider/slider_03.jpg" alt="dish image" class="carousel__item-img">
+						<div class="carousel__block carousel__block-active">
+							<button class="carousel__btn">
+								<a href="#" class="carousel__link">открыть меню</a>
+							</button>
+							<h3 class="carousel__title">Супы</h3>
+						</div>
+
+					</div>
+					<div class="carousel__item">
+						<img src="./images/slider/slider_04.jpg" alt="dish image" class="carousel__item-img">
+						<div class="carousel__block">
+							<h3 class="carousel__title">Блюда на мангале</h3>
+						</div>
+
+					</div>
+					<div class="carousel__item">
+						<img src="./images/slider/slider_05.jpg" alt="dish image" class="carousel__item-img">
+						<div class="carousel__block">
+							<h3 class="carousel__title">Горячие блюда</h3>
+						</div>
+
+					</div>
+					<div class="carousel__item">
+						<img src="./images/slider/slider_06.1.jpg" alt="dish image" class="carousel__item-img">
+						<div class="carousel__block">
+							<h3 class="carousel__title">Соусы</h3>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
-		<button class="content__btn  button">
-			<a href="#" class="content__btn-link">ПЕРЕЙТИ К ДОСТАВКЕ</a></button>
-	</div>
+	</section>
+</div>
+<section class="delivery">
+	<div class="container"></div>
 </section>
+
 
 <body>
 

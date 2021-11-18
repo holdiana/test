@@ -1,11 +1,12 @@
-.content {
-	background-image: url("../images/bg_2.png");
+.connent-background {
+	background-image: url("../images/bg_02.png");
 	background-repeat: no-repeat;
+	background-size: cover; ///121212
 	background-position: top center;
-	background-size: cover;
-	height: 1200px;
-	margin-top: -126px;
+	margin-top: -125px; //125px
 	padding-top: 190px; //121212
+}
+.content {
 	padding-bottom: 137.5px;
 	& .container {
 		text-align: center;

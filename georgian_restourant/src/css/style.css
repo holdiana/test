@@ -59,6 +59,10 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 .top-background {
   background-image: url("../images/bg_1.jpg");
   background-repeat: no-repeat;
@@ -84,19 +88,19 @@ h2 {
           align-items: center;
 }
 
-.header__menu-items {
+.header__nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header__menu-item:not(:last-child) {
+.header__nav-item:not(:last-child) {
   margin-right: 60px;
   font-weight: 500;
 }
 
 @media (max-width: 1024px) {
-  .header__menu-item:not(:last-child) {
+  .header__nav-item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -141,14 +145,16 @@ h2 {
   padding: 25px 0 35px 0;
 }
 
-.content {
-  background-image: url("../images/bg_2.png");
+.connent-background {
+  background-image: url("../images/bg_02.png");
   background-repeat: no-repeat;
-  background-position: top center;
   background-size: cover;
-  height: 1200px;
-  margin-top: -126px;
+  background-position: top center;
+  margin-top: -125px;
   padding-top: 190px;
+}
+
+.content {
   padding-bottom: 137.5px;
 }
 
@@ -207,4 +213,65 @@ h2 {
   padding: 40px 0 60px 0;
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+.menu .wrapper {
+  text-align: center;
+}
+
+.menu__description {
+  max-width: 632px;
+  margin: 0 auto;
+  padding: 25px 0 62.5px 0;
+}
+
+.menu .carousel {
+  overflow: hidden;
+}
+
+.menu .carousel__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .carousel__item {
+  position: relative;
+  max-width: 288px;
+}
+
+.menu .carousel__item-img {
+  height: 508px;
+}
+
+.menu .carousel__block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -40%;
+  margin-top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .carousel__btn {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 21px 55px 20px 55px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  font-weight: 900;
+}
+
+.menu .carousel__title {
+  margin: 190px auto 30px auto;
 }
