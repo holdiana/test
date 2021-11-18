@@ -1,0 +1,45 @@
+.top-background {
+	background-image: url("../images/bg_1.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.header {
+	width: 100%;
+	height: 66px;
+	padding-top: 5px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__menu {
+		&-items {
+			display: flex;
+		}
+		&-item {
+			&:not(:last-child) {
+				margin-right: 60px;
+				font-weight: 500;
+				@include media-laptop {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+	&__callback {
+		display: flex;
+		align-items: center;
+		&-tell {
+			margin-right: 30px;
+			font-size: 1.31rem;
+			line-height: 138%;
+		}
+		&-image {
+			margin-right: 10px;
+		}
+		&-link {
+			margin-right: 15px;
+		}
+	}
+}

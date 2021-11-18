@@ -1,0 +1,13 @@
+.main {
+	padding: 130px 0 176px 0;
+	&__title {
+		max-width: 580px;
+		& span {
+			color: $primary_color;
+		}
+	}
+	&__description {
+		max-width: 500px;
+		padding: 25px 0 35px 0;
+	}
+}
