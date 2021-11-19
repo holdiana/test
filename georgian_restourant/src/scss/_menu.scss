@@ -9,7 +9,22 @@
 	}
 	& .carousel {
 		overflow: hidden;
+
+		// &__arrow {
+		// 	z-index: 22;
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	width: 40px;
+		// 	height: 40px;
+		// 	cursor: pointer;
+		// 	background-color: red;
+		// 	&-prev {
+		// 	}
+		// 	&-next {
+		// 	}
+		// }
 		&__inner {
+			// position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -17,7 +32,6 @@
 		&__item {
 			position: relative;
 			max-width: 288px;
-
 			&-img {
 				height: 508px;
 			}
