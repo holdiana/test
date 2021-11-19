@@ -47,18 +47,10 @@
 		width: 100%;
 	}
 	&__slider {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		flex-basis: 25% 25% 25% 25%;
-
-		// display: grid;
-		// grid-template-columns: repeat(4, 1fr);
-		// grid-gap: 0px 0px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
 		&-item {
-			max-width: 358px;
-			margin: 0;
-			padding: 0;
+			// max-width: 358px;
 		}
 		&-img {
 			width: 100%;
