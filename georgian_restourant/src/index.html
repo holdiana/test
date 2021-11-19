@@ -10,22 +10,26 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="../src/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script src="./js/script.js" defer></script>
 </head>
-<div class="top-background">
+<div class="top-background" id="main">
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__logo">
-					<a href="#" class="header__logo-link">
+					<a href="#main" class="header__logo-link">
 						<img src="../src/icons/logo.svg" alt="logo icon" class="header__logo-img">
 					</a>
 				</div>
 				<nav class="header__nav">
+					<div class="header__burger">
+						<span class="line"></span>
+					</div>
 					<ul class="header__nav-items">
-						<li class="header__nav-item"><a href="#" class="header__nav-link">главная</a></li>
-						<li class="header__nav-item"><a href="#" class="header__nav-link">меню</a></li>
-						<li class="header__nav-item"><a href="#" class="header__nav-link">доставка</a></li>
-						<li class="header__nav-item"><a href="#" class="header__nav-link">контакты</a></li>
+						<li class="header__nav-item"><a href="#main" class="header__nav-link">главная</a></li>
+						<li class="header__nav-item"><a href="#menus" class="header__nav-link">меню</a></li>
+						<li class="header__nav-item"><a href="#delivery" class="header__nav-link">доставка</a></li>
+						<li class="header__nav-item"><a href="#footer" class="header__nav-link">контакты</a></li>
 						<li class="header__nav-item"><a href="#" class="header__nav-link">акции</a></li>
 					</ul>
 				</nav>
@@ -36,10 +40,10 @@
 							+7 (000)123 45 67</a>
 					</div>
 					<div class="header__callback-social">
-						<a href="#" class="header__callback-link">
+						<a href="https://www.instagram.com/" class="header__callback-link">
 							<img src="../src/icons/inst_icon.svg" alt="instagramm icon" class="header__callback-img">
 						</a>
-						<a href="#" class="header__callback-link">
+						<a href="https://m.facebook.com/" class="header__callback-link">
 							<img src="./icons/facebook_icon.svg" alt="fasebook icon" class="header__callback-img">
 						</a>
 						<a href="#" class="header__callback-link">
@@ -76,17 +80,14 @@
 			<div class="content__inner">
 				<div class="content__item">
 					<div class="content__item-img01 content__image"></div>
-					<!-- <img src="./images/el_01.jpg" alt="image dish" class="content__item-img"> -->
 					<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
 				</div>
 				<div class="content__item">
 					<div class="content__item-img02 content__image"></div>
-					<!-- <img src="./images/el_02.jpg" alt="image dish" class="content__item-img"> -->
 					<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
 				</div>
 				<div class="content__item">
 					<div class="content__item-img03 content__image"></div>
-					<!-- <img src="./images/el_03.jpg" alt="image dish" class="content__item-img"> -->
 					<p class="content__item-text">Здесь будет какой то текст, возможно назване блюда</p>
 				</div>
 			</div>
@@ -94,20 +95,27 @@
 				<a href="#" class="content__btn-link">ПЕРЕЙТИ К ДОСТАВКЕ</a></button>
 		</div>
 	</section>
-	<section class="menu">
+	<section class="menu" id="menus">
 		<div class="wrapper">
 			<h2 class="menu__title title">Меню</h2>
 			<p class="menu__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna
 				hendrerit convallis aliquam consequat turpis.</p>
 			<div class="carousel">
 				<div class="carousel__inner">
-					<div class="carousel__arrows">
+					<!-- <div class="carousel__arrows">
 						<div class="carousel__arrow carousel__arrow-prev">
 							<img src="./icons/right-arrow.svg" alt="prev icon" class="carousel__arrow-icon">
 						</div>
 						<div class="carousel__arrow carousel__arrow-next">
 							<img src="./icons/left-arrow.svg" alt="next icon" class="carousel__arrow-icon">
 						</div>
+					</div> -->
+					<div class="carousel__item active">
+						<img src="./images/snacks/snacks.png" alt="dish image" class="carousel__item-img">
+						<div class="carousel__block">
+							<h3 class="carousel__title">Холодные закуски</h3>
+						</div>
+
 					</div>
 					<div class="carousel__item active">
 						<img src="./images/slider/slider_01.jpg" alt="dish image" class="carousel__item-img">
@@ -117,14 +125,14 @@
 
 					</div>
 					<div class="carousel__item">
-						<img src="./images/slider/slider_02.jpg" alt="dish image" class="carousel__item-img">
+						<img src="./images/menu/dish_03.jpg" alt="dish image" class="carousel__item-img">
 						<div class="carousel__block">
 							<h3 class="carousel__title">Выпечка</h3>
 						</div>
 
 					</div>
 					<div class="carousel__item">
-						<img src="./images/slider/slider_03.jpg" alt="dish image" class="carousel__item-img">
+						<img src="./images/menu/dish_04.jpg" alt="dish image" class="carousel__item-img">
 						<div class="carousel__block carousel__block-active">
 							<button class="carousel__btn">
 								<a href="#" class="carousel__link">открыть меню</a>
@@ -134,14 +142,14 @@
 
 					</div>
 					<div class="carousel__item">
-						<img src="./images/slider/slider_04.jpg" alt="dish image" class="carousel__item-img">
+						<img src="./images/menu/dish_07.jpg" alt="dish image" class="carousel__item-img">
 						<div class="carousel__block">
 							<h3 class="carousel__title">Блюда на мангале</h3>
 						</div>
 
 					</div>
 					<div class="carousel__item">
-						<img src="./images/slider/slider_05.jpg" alt="dish image" class="carousel__item-img">
+						<img src="./images/menu/dish_02.jpg" alt="dish image" class="carousel__item-img">
 						<div class="carousel__block">
 							<h3 class="carousel__title">Горячие блюда</h3>
 						</div>
@@ -159,7 +167,7 @@
 		</div>
 	</section>
 </div>
-<section class="delivery">
+<section class="delivery" id="delivery">
 	<div class="container">
 		<h2 class="delivery__title title">Удобные способы доставки</h2>
 		<p class="delivery__description">
@@ -189,7 +197,7 @@
 	<div class="gallery">
 		<div class="gallery-wrapper">
 			<div class="gallery__slider">
-				<div class="gallery__slider-item">
+				<div class="gallery__slider-item gallery__slider-active">
 					<img src="./images/menu/dish_01.jpg" alt="dish image" class="gallery__slider-img">
 				</div>
 				<div class="gallery__slider-item">
@@ -214,27 +222,35 @@
 					<img src="./images/menu/dish_08.jpg" alt="dish image" class="gallery__slider-img">
 				</div>
 			</div>
-			<div class="gallery__slider-dots"></div>
+			<div class="gallery__slider-dots">
+				<span class="gallery__dots"></span>
+				<span class="gallery__dots"></span>
+				<span class="gallery__dots"></span>
+				<span class="gallery__dots"></span>
+				<span class="gallery__dots"></span>
+
+			</div>
 		</div>
+
 	</div>
 </section>
-<footer class="footer">
+<footer class="footer" id="footer">
 	<div class="container">
 		<ul class="footer__top-inner">
-			<li class="footer__top-item"><a href="#" class="footer__top-logo">
+			<li class="footer__top-item"><a href="#main" class="footer__top-logo">
 					<img src="../src/icons/logo.svg" alt="logo icon">
 				</a></li>
 			<li class="footer__top-item footer__top-social">
 				<a href="tel:+70001234567" class="footer__callback">
-					+7 (000)123 45 67</a>
+					+7 (123) 456-99-98</a>
 				<a href="#" class="footer__callback-link">
-					<img src="./icons/telegram.svg" alt="instagramm icon" class="footer__callback-img">
+					<img src="./icons/telegram.svg" alt="telegram icon" class="footer__callback-img">
 				</a>
 				<a href="#" class="footer__callback-link">
-					<img src="./icons/viber-mob.svg" alt="fasebook icon" class="footer__callback-img">
+					<img src="./icons/whatsapp-mob.svg" alt="whatsapp-mob icon" class="footer__callback-img">
 				</a>
 				<a href="#" class="footer__callback-link">
-					<img src="./icons/whatsapp-mob.svg" alt="twitter icon" class="footer__callback-img">
+					<img src="./icons/viber-mob.svg" alt="viber-mob icon" class="footer__callback-img">
 				</a>
 
 			</li>

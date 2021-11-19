@@ -18,7 +18,7 @@
 		@content;
 	}
 }
-//1024px
+//992px
 @mixin media-laptop {
 	@media (max-width: $content-width) {
 		@content;
@@ -37,9 +37,9 @@
 	}
 }
 
-//425px
-@mixin media-mobile-large {
-	@media (max-width: $mobile-large-width) {
+//375px
+@mixin media-mobile {
+	@media (max-width: $mobile-width) {
 		@content;
 	}
 }

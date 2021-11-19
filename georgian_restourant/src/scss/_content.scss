@@ -5,9 +5,18 @@
 	background-position: top center;
 	margin-top: -125px; //125px
 	padding-top: 190px; //121212
+	@include media-tablet {
+		margin-top: -200px;
+	}
 }
 .content {
 	padding-bottom: 137.5px;
+	@include media-tablet {
+		padding-bottom: 50px;
+	}
+	@include sm-tablet {
+		padding-bottom: 0px;
+	}
 	& .container {
 		text-align: center;
 	}
@@ -21,6 +30,10 @@
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
+		@include media-tablet {
+			flex-wrap: wrap;
+			align-items: center;
+		}
 	}
 	&__image {
 		width: 100%;
@@ -35,7 +48,14 @@
 		text-align: center;
 		&:not(:last-child) {
 			margin-right: 60px;
+			@include media-tablet {
+				margin-right: 40px;
+			}
+			@include media-mobile {
+				margin-right: 0px;
+			}
 		}
+
 		&-img01 {
 			background-image: url("../images/el_01.jpg");
 		}
@@ -49,6 +69,11 @@
 			padding: 40px 0 60px 0;
 			font-size: 1.125rem;
 			font-weight: 700;
+		}
+	}
+	&__btn {
+		@include media-tablet {
+			display: none;
 		}
 	}
 }

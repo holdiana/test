@@ -3,6 +3,9 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+	// @include media-tablet {
+	// 	background-position: left center;
+	// }
 }
 .header {
 	width: 100%;
@@ -12,34 +15,144 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include sm-tablet {
+			justify-content: center;
+		}
+	}
+	&__logo {
+		@include sm-tablet {
+			flex-grow: 1;
+		}
 	}
 	&__nav {
+		@include media-laptop {
+			order: 1;
+		}
+		@include media-mobile {
+			margin-right: 10px;
+		}
+
 		&-items {
 			display: flex;
+			@include media-laptop {
+				display: none;
+			}
 		}
+
+		.header__burger._active {
+			& span {
+				transform: scale(0) translate(0px, -50%);
+			}
+			&::before {
+				top: 50%;
+				transform: rotate(-45deg) translate(0px, -50%);
+			}
+			&::after {
+				bottom: 50%;
+				transform: rotate(45deg) translate(0px, 50%);
+			}
+		}
+
 		&-item {
 			&:not(:last-child) {
 				margin-right: 60px;
 				font-weight: 500;
-				@include media-laptop {
-					margin-right: 30px;
+				@include laptop-l {
+					margin-right: 40px;
 				}
 			}
+		}
+		&-link {
+			display: block; //121211111111111111111111111111
+			transition: all 0.5;
+			&::after,
+			&::before {
+				transition: all 0.5;
+			}
+			&:hover {
+				color: red;
+				text-decoration: underline;
+			}
+		}
+	}
+	&__burger {
+		display: none;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			left: 0;
+			height: 2.5px;
+			background-color: $white_text_color;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		@include media-laptop {
+			display: flex;
+			position: relative;
+			width: 30px;
+			height: 25px;
+			background-color: transparent;
+		}
+		& span {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 2.5px;
+			top: 45%;
+			background-color: $white_text_color;
+
+			//close menu
+			transition: all ease 0.3s;
+			transform: scale(1) translate(0px, -50%);
 		}
 	}
 	&__callback {
 		display: flex;
 		align-items: center;
+
 		&-tell {
 			margin-right: 30px;
 			font-size: 1.31rem;
 			line-height: 138%;
+			@include laptop-l {
+				margin-right: 10px;
+			}
+			@include sm-tablet {
+				font-size: 0;
+				margin-right: 5px;
+				width: 30px;
+			}
 		}
 		&-image {
 			margin-right: 10px;
 		}
 		&-link {
 			margin-right: 15px;
+			@include sm-tablet {
+				margin-right: 7px;
+			}
 		}
 	}
 }
+// @include media-laptop {
+// 	.header__nav-items {
+// 		position: fixed;
+// 		top: 0;
+// 		left: -100%;
+// 		width: 100%;
+// 		height: 100%;
+// 		background-color: rgba(214, 84, 84, 0.9);
+// 		padding: 100px 30px 30px 30px;
+// 		transition: left 0.8s easy 0s;
+// 		overflow: auto;
+// 		&._active {
+// 			left: 0;
+// 		}
+// 	}
+// }
