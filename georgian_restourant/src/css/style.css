@@ -739,6 +739,18 @@ h5 {
   margin-top: -5px;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    margin-top: -35px;
+  }
+}
+
+@media (max-width: 555px) {
+  .footer {
+    padding: 60px 0 30px 0;
+  }
+}
+
 .footer__top-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,6 +762,41 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .footer__top-inner {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+}
+
+@media (max-width: 555px) {
+  .footer__top-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__top-item:nth-child(n + 3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__top-item:nth-child(4) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 555px) {
+  .footer__top-item {
+    padding-bottom: 30px;
+  }
 }
 
 .footer__top-social {
@@ -786,6 +833,16 @@ h5 {
           align-items: center;
 }
 
+@media (max-width: 992px) {
+  .footer__bottom-inner {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__bottom-documents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,14 +852,28 @@ h5 {
           justify-content: center;
 }
 
+@media (max-width: 375px) {
+  .footer__bottom-documents {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer__bottom-text:not(:last-child) {
   margin-right: 30px;
 }
 
-* {
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@media (max-width: 375px) {
+  .footer__bottom-text:not(:last-child) {
+    margin-right: 0;
+    padding-bottom: 10px;
+  }
 }
 
 .price {
@@ -835,20 +906,13 @@ h5 {
 
 @media (max-width: 768px) {
   .price__galery {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
   }
 }
 
 @media (max-width: 555px) {
   .price__galery {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
 }

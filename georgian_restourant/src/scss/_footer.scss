@@ -2,13 +2,39 @@
 	background-color: $black_color;
 	padding: 37px 0 33px 0;
 	margin-top: -5px;
+	@include media-tablet {
+		margin-top: -35px;
+	}
+	@include sm-tablet {
+		padding: 60px 0 30px 0;
+	}
 	&__top {
 		&-inner {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			padding-bottom: 30px;
+			@include media-laptop {
+				flex-flow: wrap;
+			}
+			@include sm-tablet {
+				flex-direction: column;
+			}
 		}
+		&-item {
+			@include media-laptop {
+				&:nth-child(n + 3) {
+					order: 2;
+				}
+				&:nth-child(4) {
+					order: 1;
+				}
+			}
+			@include sm-tablet {
+				padding-bottom: 30px;
+			}
+		}
+
 		&-social {
 			text-align: center;
 		}
@@ -18,12 +44,16 @@
 		font-size: 1.19rem;
 		font-weight: 700;
 		margin-right: 4px;
+		@include media-laptop {
+		}
 	}
 
 	&__address {
 		max-width: 250px;
 		font-size: 0.88rem;
 		line-height: 1rem;
+		@include media-laptop {
+		}
 	}
 	&__email {
 		font-size: 0.88rem;
@@ -34,18 +64,27 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@include media-laptop {
+				flex-flow: wrap;
+				justify-content: center;
+			}
 		}
 		&-documents {
 			display: flex;
 			justify-content: center;
+			@include media-mobile {
+				flex-flow: wrap;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 		&-text {
 			&:not(:last-child) {
 				margin-right: 30px;
-
-				// @include media-laptop {
-				// 	margin-right: 30px;
-				// }
+				@include media-mobile {
+					margin-right: 0;
+					padding-bottom: 10px;
+				}
 			}
 		}
 	}
