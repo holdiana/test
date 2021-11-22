@@ -2,7 +2,7 @@
 	background-color: $black_color;
 	padding: 37px 0 33px 0;
 	margin-top: -5px;
-	@include media-tablet {
+	@include media-laptop {
 		margin-top: -35px;
 	}
 	@include sm-tablet {

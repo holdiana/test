@@ -88,6 +88,16 @@
 		}
 
 		&-item {
+			@include media-laptop {
+				&:not(:nth-child(-n + 6)) {
+					display: none;
+				}
+			}
+			@include media-tablet {
+				&:not(:nth-child(-n + 4)) {
+					display: none;
+				}
+			}
 			@include sm-tablet {
 				display: none;
 			}
@@ -105,7 +115,7 @@
 		}
 		&-dots {
 			display: none;
-			@include media-tablet {
+			@include media-laptop {
 				margin: 30px auto;
 				width: 90px;
 				display: flex;
