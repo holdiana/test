@@ -14,6 +14,9 @@
 	& .carousel {
 		overflow: hidden;
 		margin: 0 auto;
+		@include sm-tablet {
+			margin: 0 10px;
+		}
 
 		&-control {
 			position: absolute;
@@ -37,7 +40,7 @@
 		}
 		&__inner {
 			position: relative;
-			@include media-mobile {
+			@include sm-tablet {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center; //11111111111111111111111
@@ -47,11 +50,15 @@
 		&__item {
 			position: relative;
 			max-width: 288px;
-			@include media-mobile {
+
+			border-radius: 4px;
+			@include sm-tablet {
 				width: 355px;
+				margin-bottom: 10px;
 			}
 
 			&-img {
+				box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
 				width: 100%;
 				height: 508px;
 				@include media-tablet {
@@ -60,40 +67,80 @@
 				@include sm-tablet {
 					height: 300px;
 				}
+				@include sm-tablet {
+					display: block;
+					background: #222;
+					color: #fff;
+					opacity: 0.7;
+					transition: 0.5s ease;
+					&:hover {
+						opacity: 1;
+					}
+				}
 			}
 		}
-		&__block {
-			position: absolute;
-			left: 50%;
-			top: 40%;
-			margin-left: -48%;
-			margin-top: -10%;
-			display: flex;
-			flex-direction: column;
-			align-content: space-between;
-		}
 
-		&__btn {
-			// display: none;
-			background: rgba(0, 0, 0, 0.65);
-			padding: 21px 55px;
-			border: 2px solid rgba(255, 255, 255, 0.6);
-			font-weight: 900;
-			// margin-bottom: 144px;
-			// position: absolute;
-			// left: 50%;
-			// top: 50%;
-			// margin-left: -40%;
-			// margin-top: -10%;
-		}
 		&__title {
-			margin-top: -80px;
+			position: absolute;
+			top: 90%;
+			left: 50%;
+			transform: translate(-50%, -90%);
+			width: 280px;
+			@include media-laptop {
+				width: 240px;
+			}
+			@include sm-tablet {
+				top: 30%;
+				left: 50%;
+				transform: translate(-50%, -30%);
+				width: 239px;
+				margin: 0;
+			}
 		}
 	}
 }
-.slick-active {
-}
-.carousel__item[class="slick-active"] button {
+
+.slick-slide,
+.slick-active + .slick-active ~ .slick-active {
 	display: block;
-	z-index: 22;
+	padding: 0 5px;
+	background: #222;
+	color: #fff;
+	transform: scale(1);
+	opacity: 0.7;
+	transition: 0.5s ease;
+}
+
+.slick-active + .slick-active {
+	transform: scale(1.1);
+	opacity: 1;
+	& .carousel__btn {
+		display: block;
+	}
+}
+
+.carousel__btn {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 221px;
+	background: rgba(0, 0, 0, 0.65);
+	padding: 21px 50px;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	font-weight: 900;
+	@include media-laptop {
+		width: 181px;
+		padding: 21px 20px;
+	}
+
+	@include sm-tablet {
+		width: 229px;
+		padding: 21px 50px;
+		display: block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
