@@ -1,5 +1,5 @@
 const iconMenu = document.querySelector('.header__burger');
-const menuBody = document.querySelector('.header__nav-items');
+const menuBody = document.querySelector('.header__nav-body');
 
 if (iconMenu) {
 	iconMenu.addEventListener('click', function(e) {
@@ -8,6 +8,9 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	})
 }
+
+
+
 
 //slider
 $('.carousel__inner').slick({

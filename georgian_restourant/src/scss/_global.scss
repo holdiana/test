@@ -14,6 +14,11 @@ body {
 	color: $white_text_color;
 	line-height: 136%;
 	font-weight: 400;
+	// height: 100%;
+	overflow-x: hidden;
+	&._lock {
+		overflow: hidden;
+	}
 }
 
 .container {

@@ -15,6 +15,11 @@ body {
   color: #fff;
   line-height: 136%;
   font-weight: 400;
+  overflow-x: hidden;
+}
+
+body._lock {
+  overflow: hidden;
 }
 
 .container {
@@ -122,6 +127,13 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .header__wrapper {
+    position: relative;
+  }
 }
 
 @media (max-width: 555px) {
@@ -162,7 +174,20 @@ h5 {
 
 @media (max-width: 992px) {
   .header__nav-items {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__nav-items li {
+    margin: 0 0 30px 0;
+    font-size: 2rem;
+  }
+  .header__nav-items li:last-child {
+    margin-right: 40px;
+  }
+  .header__nav-items li a {
+    text-align: right;
   }
 }
 
@@ -196,8 +221,8 @@ h5 {
 
 .header__nav-link {
   display: block;
-  -webkit-transition: all 0.5 ease;
-  transition: all 0.5 ease;
+  -webkit-transition: all 0.7 ease;
+  transition: all 0.7 ease;
 }
 
 .header__nav-link:hover {
@@ -293,6 +318,24 @@ h5 {
   }
 }
 
+@media (max-width: 992px) {
+  .header__nav-body {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px 30px 30px 30px;
+    -webkit-transition: right 0.8s;
+    transition: right 0.8s;
+    overflow: auto;
+  }
+  .header__nav-body._active {
+    right: 0;
+  }
+}
+
 .main {
   padding: 130px 0 220px 0;
 }
@@ -344,6 +387,17 @@ h5 {
     max-width: 355px;
     margin: 0 auto;
   }
+}
+
+.main__btn {
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.main__btn:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .connent-background {
@@ -466,6 +520,17 @@ h5 {
   padding: 40px 0 60px 0;
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+.content__btn {
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.content__btn:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
