@@ -8,6 +8,9 @@
 	@include media-tablet {
 		margin-top: -200px;
 	}
+	@include sm-tablet {
+		margin-top: -300px;
+	}
 }
 .content {
 	padding-bottom: 137.5px;
@@ -19,6 +22,11 @@
 	}
 	& .container {
 		text-align: center;
+	}
+	&__title {
+		@include sm-tablet {
+			padding-top: 50px;
+		}
 	}
 	&__description {
 		max-width: 632px;
@@ -72,6 +80,13 @@
 		}
 	}
 	&__btn {
+		transition: ease all 1s;
+		&:hover {
+			cursor: pointer;
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
+		}
 		@include media-tablet {
 			display: none;
 		}

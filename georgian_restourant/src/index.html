@@ -8,7 +8,7 @@
 	<title>Georgian restourant</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -20,20 +20,23 @@
 			<div class="header__wrapper">
 				<div class="header__logo">
 					<a href="#main" class="header__logo-link">
-						<img src="../src/icons/logo.svg" alt="logo icon" class="header__logo-img">
+						<img src="./icons/logo.svg" alt="logo icon" class="header__logo-img">
 					</a>
 				</div>
 				<nav class="header__nav">
 					<div class="header__burger">
 						<span class="line"></span>
 					</div>
-					<ul class="header__nav-items">
-						<li class="header__nav-item"><a href="#main" class="header__nav-link">главная</a></li>
-						<li class="header__nav-item"><a href="#menus" class="header__nav-link">меню</a></li>
-						<li class="header__nav-item"><a href="#delivery" class="header__nav-link">доставка</a></li>
-						<li class="header__nav-item"><a href="#footer" class="header__nav-link">контакты</a></li>
-						<li class="header__nav-item"><a href="#" class="header__nav-link">акции</a></li>
-					</ul>
+					<div class="header__nav-body">
+						<ul class="header__nav-items">
+							<li class="header__nav-item"><a href="#main" class="header__nav-link">главная</a></li>
+							<li class="header__nav-item"><a href="#menus" class="header__nav-link">меню</a></li>
+							<li class="header__nav-item"><a href="#delivery" class="header__nav-link">доставка</a></li>
+							<li class="header__nav-item"><a href="#footer" class="header__nav-link">контакты</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">акции</a></li>
+						</ul>
+					</div>
+
 				</nav>
 				<div class="header__callback">
 					<div class="header__callback-tell">
@@ -43,7 +46,7 @@
 					</div>
 					<div class="header__callback-social">
 						<a href="https://www.instagram.com/" class="header__callback-link">
-							<img src="../src/icons/inst_icon.svg" alt="instagramm icon" class="header__callback-img">
+							<img src="./icons/inst_icon.svg" alt="instagramm icon" class="header__callback-img">
 						</a>
 						<a href="https://m.facebook.com/" class="header__callback-link">
 							<img src="./icons/facebook_icon.svg" alt="fasebook icon" class="header__callback-img">
@@ -106,35 +109,52 @@
 				<div class="slider carousel__inner">
 					<div class="carousel__item">
 						<img src="./images/snacks/snack_02.png" alt="dish image" class="carousel__item-img">
+						<button class="carousel__btn">
+							<a href="./page/snacks.html" class="carousel__link">открыть меню</a>
+						</button>
 						<h3 class="carousel__title">Холодные закуски</h3>
 					</div>
 					<div class="carousel__item">
 						<img src="./images/slider/slider_01.jpg" alt="dish image" class="carousel__item-img">
+						<button class="carousel__btn">
+							<a href="#" class="carousel__link">открыть меню</a>
+						</button>
 						<h3 class="carousel__title">Салаты</h3>
 					</div>
 					<div class="carousel__item">
 						<img src="./images/slider/slider_02.jpg" alt="dish image" class="carousel__item-img">
+						<button class="carousel__btn">
+							<a href="#" class="carousel__link">открыть меню</a>
+						</button>
 						<h3 class="carousel__title">Выпечка</h3>
 					</div>
 					<div class="carousel__item">
 						<img src="./images/slider/slider_03.jpg" alt="dish image" class="carousel__item-img">
-						<div class="carousel__block carousel__block-active">
-							<button class="carousel__btn">
-								<a href="#" class="carousel__link">открыть меню</a>
-							</button>
-							<h3 class="carousel__title">Супы</h3>
-						</div>
+						<button class="carousel__btn">
+							<a href="#" class="carousel__link">открыть меню</a>
+						</button>
+						<h3 class="carousel__title">Супы</h3>
+
 					</div>
 					<div class="carousel__item">
 						<img src="./images/slider/slider_04.jpg" alt="dish image" class="carousel__item-img">
+						<button class="carousel__btn">
+							<a href="#" class="carousel__link">открыть меню</a>
+						</button>
 						<h3 class="carousel__title">Блюда на мангале</h3>
 					</div>
 					<div class="carousel__item">
 						<img src="./images/slider/slider_05.jpg" alt="dish image" class="carousel__item-img">
+						<button class="carousel__btn">
+							<a href="#" class="carousel__link">открыть меню</a>
+						</button>
 						<h3 class="carousel__title">Горячие блюда</h3>
 					</div>
 					<div class="carousel__item">
 						<img src="./images/slider/slider_06.jpg" alt="dish image" class="carousel__item-img">
+						<button class="carousel__btn">
+							<a href="#" class="carousel__link">открыть меню</a>
+						</button>
 						<h3 class="carousel__title">Соусы</h3>
 					</div>
 				</div>
@@ -198,14 +218,6 @@
 					<img src="./images/menu/dish_08.jpg" alt="dish image" class="gallery__slider-img">
 				</div>
 			</div>
-			<div class="gallery__slider-dots">
-				<span class="gallery__dots"></span>
-				<span class="gallery__dots"></span>
-				<span class="gallery__dots"></span>
-				<span class="gallery__dots"></span>
-				<span class="gallery__dots"></span>
-
-			</div>
 		</div>
 
 	</div>
@@ -214,7 +226,7 @@
 	<div class="container">
 		<ul class="footer__top-inner">
 			<li class="footer__top-item"><a href="#main" class="footer__top-logo">
-					<img src="../src/icons/logo.svg" alt="logo icon">
+					<img src="./icons/logo.svg" alt="logo icon">
 				</a></li>
 			<li class="footer__top-item footer__top-social">
 				<a href="tel:+70001234567" class="footer__callback">

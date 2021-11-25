@@ -1,5 +1,5 @@
 const iconMenu = document.querySelector('.header__burger');
-const menuBody = document.querySelector('.header__nav-items');
+const menuBody = document.querySelector('.header__nav-body');
 
 if (iconMenu) {
 	iconMenu.addEventListener('click', function(e) {
@@ -9,13 +9,16 @@ if (iconMenu) {
 	})
 }
 
+
+
+
 //slider
 $('.carousel__inner').slick({
 	prevArrow: '<button type="button"  class="carousel-control carousel-control__right"><img src="./icons/right-arrow.svg" alt="prev icon" class="carousel__arrow-icon"></button>',
 	nextArrow: '<button type="button" class="carousel-control carousel-control__left"><img src="./icons/left-arrow.svg" alt="next icon" class="carousel__arrow-icon"></button>',
 	centerMode: true,
 	centerPadding: '60px',
-	slidesToShow: 5,
+	slidesToShow: 4,
 	dots: false,
 	responsive: [
 		{
@@ -23,27 +26,53 @@ $('.carousel__inner').slick({
 			settings: {
 				arrows: true,
 				centerMode: true,
-				centerPadding: '40px',
+				centerPadding: '60px',
 				slidesToShow: 3
 			}
 		},
 		{
-			breakpoint: 555,
+			breakpoint: 768,
 			settings: {
-				arrows: false,
+				arrows: true,
 				centerMode: true,
-				centerPadding: '20px',
-				slidesToShow: 2
+				centerPadding: '5px',
+				slidesToShow: 1
 			}
 		},
 		{
-			breakpoint: 480,
-			settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 1
-			}
+			breakpoint: 376,
+			settings: 'unslick'
 		}
 	]
 });
+
+//galery bottom
+if (screen.width <= 768) {
+	$('.gallery__slider').slick({
+		dots: true,
+		arrows: false,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		dotsClass: 'gallery__dots',
+		responsive: [
+			{
+				breakpoint: 555,
+				settings: {
+					dots: true,
+					arrows: false,
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 376,
+				settings: {
+					dots: true,
+					arrows: false,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	})
+}
