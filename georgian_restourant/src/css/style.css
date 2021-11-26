@@ -43,7 +43,7 @@ a {
   color: inherit;
 }
 
-button {
+.button {
   color: #fff;
   background-color: #b82121;
   border: none;
@@ -349,6 +349,7 @@ h5 {
 @media (max-width: 555px) {
   .main .container {
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -359,7 +360,7 @@ h5 {
 @media (max-width: 768px) {
   .main__title {
     font-size: 3rem;
-    line-height: 40px;
+    line-height: 125%;
   }
 }
 
@@ -390,8 +391,16 @@ h5 {
 }
 
 .main__btn {
+  max-width: 229px;
   -webkit-transition: ease all 1s;
   transition: ease all 1s;
+}
+
+@media (max-width: 555px) {
+  .main__btn {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .main__btn:hover {
@@ -523,6 +532,10 @@ h5 {
 }
 
 .content__btn {
+  margin: 0 auto;
+  width: 229px;
+  text-align: center;
+  padding: 21px 10px 20px 10px;
   -webkit-transition: ease all 1s;
   transition: ease all 1s;
 }
@@ -713,7 +726,7 @@ h5 {
           transform: translate(-50%, -50%);
   width: 221px;
   background: rgba(0, 0, 0, 0.65);
-  padding: 21px 50px;
+  padding: 21px 10px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   font-weight: 900;
 }
