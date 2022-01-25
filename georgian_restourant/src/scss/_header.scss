@@ -3,9 +3,6 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
-	// @include media-tablet {
-	// 	background-position: left center;
-	// }
 }
 .header {
 	width: 100%;
@@ -19,7 +16,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		overflow: hidden; //1111111111111111111111
+		overflow: hidden;
 		@include media-tablet {
 			position: relative;
 		}
@@ -44,7 +41,7 @@
 			display: flex;
 
 			@include media-laptop {
-				flex-direction: column; //111111111111111111111111111
+				flex-direction: column;
 				& li {
 					margin: 0 0 30px 0;
 					font-size: 2rem;
@@ -135,6 +132,7 @@
 			margin-right: 30px;
 			font-size: 1.31rem;
 			line-height: 138%;
+			font-weight: 700;
 			@include laptop-l {
 				margin-right: 10px;
 			}
