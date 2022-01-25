@@ -16,6 +16,7 @@ body {
 	font-weight: 400;
 	// height: 100%;
 	overflow-x: hidden;
+
 	&._lock {
 		overflow: hidden;
 	}
@@ -45,6 +46,7 @@ a {
 	padding: 21px 49px 20px 49px;
 	font-size: 0.88rem;
 	line-height: 136%;
+	font-weight: 900;
 }
 .title {
 	color: $white_text_color;
@@ -53,10 +55,12 @@ a {
 }
 h1 {
 	font-size: 3.44rem;
+	font-weight: 900;
 }
 h2 {
 	text-align: center;
 	font-size: 3rem;
+	font-weight: 900;
 	@include media-tablet {
 		font-size: 2.5rem;
 	}

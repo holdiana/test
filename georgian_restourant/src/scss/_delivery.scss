@@ -84,6 +84,7 @@
 		}
 
 		&-item {
+			max-width: 358px;
 			@include media-laptop {
 				&:not(:nth-child(-n + 6)) {
 					display: none;
